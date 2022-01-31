@@ -35,6 +35,8 @@ import { SaveAndCloseComponent } from './pop-up/save-and-close/save-and-close.co
 import { AddSkillsComponent } from './pop-up/add-skills/add-skills.component';
 import { ChangeSkillsComponent } from './pop-up/change-skills/change-skills.component';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -69,12 +71,14 @@ import { RouterModule } from '@angular/router';
     ConfirmationToCloseComponent,
     SaveAndCloseComponent,
     AddSkillsComponent,
-    ChangeSkillsComponent
+    ChangeSkillsComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
