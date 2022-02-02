@@ -17,3 +17,7 @@ button {
       padding: 40px;
       padding-bottom: 80px;
   }
+
+  button:hover {
+      background-color: #69B5DA;
+  }
