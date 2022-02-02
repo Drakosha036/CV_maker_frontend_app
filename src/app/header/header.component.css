@@ -3,5 +3,19 @@ header {
     background-color: #F8F8F8;
     color: #69B5DA;
     margin-bottom: 20px;
-    padding: 10px;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    margin: 0%;
+}
+
+.header_buttons {
+    display: flexbox;
+    flex-direction: row;
+    justify-content: space-around;
+    float: right;
+    margin-bottom: 10px;
+}
+.logout, .new_cv, .profile {
+    margin-left: 10px;
+    margin-right: 10px;
 }
