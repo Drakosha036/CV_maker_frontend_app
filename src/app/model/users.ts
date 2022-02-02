@@ -3,9 +3,9 @@ export interface Users {
     firstName: string;
     lastName: string;
     birthDate: Date;
-    phoneNumber: string;
+    phoneNumber?: string;
     email: string;
-    city: string;
+    city?: string;
     password: string;
     //photo?
 }

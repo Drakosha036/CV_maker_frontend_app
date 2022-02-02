@@ -37,6 +37,9 @@ import { ChangeSkillsComponent } from './pop-up/change-skills/change-skills.comp
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
+import { FormsModule } from '@angular/forms';
+import { SignupFormComponent } from './forms/signup-form/signup-form.component';
+import { LoginFormComponent } from './forms/login-form/login-form.component';
 
 @NgModule({
   declarations: [
@@ -72,13 +75,16 @@ import { HeaderComponent } from './header/header.component';
     SaveAndCloseComponent,
     AddSkillsComponent,
     ChangeSkillsComponent,
-    HeaderComponent
+    HeaderComponent,
+    SignupFormComponent,
+    LoginFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

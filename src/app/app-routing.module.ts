@@ -35,6 +35,7 @@ const routes: Routes = [
   {path: 'terms-of-service', component: TermsOfServiceComponent},
   {path: 'signup', component: SignupComponent},
   {path: 'login', component: LoginComponent},
+  {path: 'profile', component: ProfileComponent},
   {path: 'hard-skills-list', component: HardSkillsComponent},
   {path: 'soft-skills-test', component: SoftSkillsComponent},
   {path: 'terms-of-service', component: TermsOfServiceComponent},
