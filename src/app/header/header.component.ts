@@ -12,6 +12,8 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  isAuthenticated = false;
+
   onLogout() {
     //put some logic here
     console.log("Logged out successfully");

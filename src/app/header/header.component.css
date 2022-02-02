@@ -15,7 +15,3 @@ header {
     float: right;
     margin-bottom: 10px;
 }
-.logout, .new_cv, .profile {
-    margin-left: 10px;
-    margin-right: 10px;
-}

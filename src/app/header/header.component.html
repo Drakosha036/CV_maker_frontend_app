@@ -3,8 +3,10 @@
         <h1> Création de CV avec Terra-Nostra </h1>
     </div>
     <div class="header_buttons">
-        <button class="profile" routerLink='/profile'>Mon Profil</button>
-        <button class="new_cv" routerLink='/template-cv'>Créer un Cv</button>
-        <button class="logout" (click)="onLogout()" routerLink='/signup'>Déconnexion</button>
+        <button routerLink='/profile'>Mon Profil</button>
+        <button routerLink='/template-cv'>Créer un Cv</button>
+        <button (click)="onLogout()" routerLink='/signup'>Déconnexion</button>
+        <button *ngIf="!isAuthenticated" [hidden] routerLink='/login'>Se connecter</button>
+        <button routerLink='/signup'>S'inscrire</button>
     </div>
 </header>
