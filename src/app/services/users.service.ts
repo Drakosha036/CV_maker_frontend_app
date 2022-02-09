@@ -32,7 +32,8 @@ export class UsersService {
   createUser(user: any) {
     //we want to send a web request to create a User
     console.log('no errors');
-    return this.webReqService.post('create', { user });
+    console.log(user);
+    return this.webReqService.post('user/create', user );
   }
 
 }

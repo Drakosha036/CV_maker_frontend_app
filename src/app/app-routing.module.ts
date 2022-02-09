@@ -29,6 +29,8 @@ import { StepBackComponent } from './skill-test/step-back/step-back.component';
 import { StressManagementComponent } from './skill-test/stress-management/stress-management.component';
 import { StrictnessComponent } from './skill-test/strictness/strictness.component';
 import { TeamWorkComponent } from './skill-test/team-work/team-work.component';
+import { Component } from '@angular/core';
+import {NgForm} from '@angular/forms';
 
 const routes: Routes = [
   {path: '', component: ProfileComponent},
