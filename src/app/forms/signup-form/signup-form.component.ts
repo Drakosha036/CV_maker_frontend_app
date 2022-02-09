@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { UsersService } from 'src/app/services/users.service';
 
 @Component({
   selector: 'app-signup-form',
@@ -8,7 +9,7 @@ import { NgForm } from '@angular/forms';
 })
 export class SignupFormComponent implements OnInit {
 
-  constructor() { }
+  constructor(private userService: UsersService) { }
 
   ngOnInit(): void {
   }
@@ -30,5 +31,13 @@ export class SignupFormComponent implements OnInit {
   //permet tout simplement de faire un reset de tous les champs.
   resetUserForm(userForm: NgForm) {
     userForm.resetForm();
+  }
+
+  createNewUser() {
+    console.log('coucou2');
+    this.userService.createUser('Testing').subscribe((response: any) => {
+      console.log(response);
+    });
+    
   }
 }

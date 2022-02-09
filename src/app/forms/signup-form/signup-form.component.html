@@ -26,7 +26,7 @@
         </div>
             <br>
         <div>
-            <button type="submit" [disabled]="userForm.invalid" (click)="resetUserForm(userForm)" routerLink='/login'>S'inscrire</button>
+            <button type="button" [disabled]="userForm.invalid" (click)="resetUserForm(userForm)" (click)="createNewUser()" routerLink='/login'>S'inscrire</button>
         </div>
     </form>
 </div>
