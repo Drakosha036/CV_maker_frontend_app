@@ -16,8 +16,14 @@ button {
       margin: 60px;
       padding: 40px;
       padding-bottom: 80px;
+      height: 100%;
   }
 
   button:hover {
       background-color: #69B5DA;
   }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+}
