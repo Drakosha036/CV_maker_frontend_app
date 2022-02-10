@@ -1,16 +1,16 @@
 <div class="background">
-    <form ngForm #userForm="ngForm" (submit)="onFormSubmit(userForm)">
+    <form [formGroup]="profileForm" (submit)="onSubmit()">
         <div>
             <label>Email</label>
-            <input type="text" ngModel name="email" id="email" class="form-control" required>
+            <input type="email" required formControlName="email">
         </div>
         <div>
             <label>Mot de passe</label>
-            <input type="text" ngModel name="password" id="password" class="form-control" required>
+            <input type="password" required formControlName="password" >
         </div>
             <br>
         <div>
-            <button type="submit" [disabled]="userForm.invalid" (click)="resetUserForm(userForm)" routerLink='/profile'>Se connecter</button>
+            <button type="submit" [disabled]="!profileForm.valid">Se connecter</button>
         </div>
     </form>
 </div>

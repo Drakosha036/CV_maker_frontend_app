@@ -1,32 +1,32 @@
 <div class="background">
     <form [formGroup]="profileForm"  (ngSubmit)="onSubmit()">
         <div>
-            <label for="Nom">* Nom</label>
-            <input type="text"  formControlName="last_name" >
+            <label>* Prenom</label>
+            <input type="text" required formControlName="first_name" >
         </div>
         <div>
-            <label>* Prenom</label>
-            <input type="text"  formControlName="first_name" >
+            <label for="Nom">* Nom</label>
+            <input type="text" required formControlName="last_name" >
         </div>
         <div>
             <label>* Email</label>
-            <input type="text"  formControlName="email" >
+            <input type="email" required formControlName="email" >
         </div>
         <div>
             <label>* Mot de passe</label>
-            <input type="password"  formControlName="password" >
+            <input type="password" required formControlName="password" >
         </div>
         <div>
             <label>* Confirmer mot de passe</label>
-            <input type="password"  formControlName="confirm_password" >
+            <input type="password" required formControlName="confirm_password" >
         </div>
             <br>
         <div>
-            <p><input type="checkbox" >J’accepte <a routerLink='/terms-of-service'>les conditions generales d’utilisation *</a></p>
+            <p><input type="checkbox" required>J’accepte <a routerLink='/terms-of-service'>les conditions generales d’utilisation *</a></p>
         </div>
             <br>
         <div>
-            <button type="submit" >S'inscrire</button>
+            <button type="submit"  [disabled]="!profileForm.valid">S'inscrire</button>
         </div>
     </form>
 </div>

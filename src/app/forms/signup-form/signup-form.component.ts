@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup,  NgForm, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { UsersService } from 'src/app/services/users.service';
 
 @Component({
@@ -9,32 +10,36 @@ import { UsersService } from 'src/app/services/users.service';
 })
 export class SignupFormComponent implements OnInit {
 
-  constructor(private userService: UsersService) { }
-
+  constructor(private userService: UsersService, private router: Router) { }
+  
+  submitted = false;
+  
   ngOnInit(): void {
   }
-  submitted = false;
+  
 
 
   //formulaire
   profileForm = new FormGroup({
-    last_name: new FormControl(''),
     first_name: new FormControl(''),
+    last_name: new FormControl(''),
     email: new FormControl(''),
     password: new FormControl(''),
     confirm_password: new FormControl(''),
   });
   
-  //prend un paramètre de type “NgForm” qu’on peut voir son contenu dans la console “log”.
+  //les fonctions appeles en cliquant sur button 
   onSubmit() {
     console.log(this.profileForm.value);
     this.submitted = true;
     this.createNewUser(this.profileForm.value);
-    this.resetUserForm(this.profileForm.value);
     
+    this.resetUserForm(this.profileForm.value);
+    //faire redirect sur la page profile
+    this.router.navigate(['/login']);
   }
   //permet tout simplement de faire un reset de tous les champs.
-  resetUserForm(userForm: NgForm) {
+  resetUserForm(user: any) {
     this.profileForm.reset();
   }
 

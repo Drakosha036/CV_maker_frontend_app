@@ -36,4 +36,8 @@ export class UsersService {
     return this.webReqService.post('user/create', user );
   }
 
+  loginUser(user: any) {
+    return this.webReqService.post('user/login', user);
+  }
+
 }
