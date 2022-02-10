@@ -12,3 +12,12 @@
       height: 100px;
   }
   
+  .field {
+      padding-top: 5px;
+      padding-bottom: 5px;
+  }
+
+  .photo {
+      width: 100%;
+      margin: 0%;
+  }
