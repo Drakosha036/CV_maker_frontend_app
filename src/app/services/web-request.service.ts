@@ -15,7 +15,14 @@ export class WebRequestService {
   }
 
   get(uri: string) {
-    return this.http.get(`${this.ROOT_URL}/${uri}`);
+    //return this.http.get(`${this.ROOT_URL}/${uri}`);
+    let result = {};
+    this.http.get(`${this.ROOT_URL}/${uri}`).subscribe(response=>{
+      result = response;
+    });
+    console.log('request');
+    console.log(result);
+    return result;
   }
 
   post(uri: string, payload: Object) {

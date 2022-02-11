@@ -18,6 +18,9 @@
   }
 
   .photo {
-      width: 100%;
+      max-width: 100%;
+      size: 70%;
       margin: 0%;
+      margin-top: 8%;
+      align-items: center;
   }

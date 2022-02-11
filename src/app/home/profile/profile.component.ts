@@ -13,15 +13,17 @@ export class ProfileComponent implements OnInit {
   constructor(private userService: UsersService) { }
 
   ngOnInit(): void {
-    //console.log(this.userService.getUsers());
-     
+    console.log('ici');
+    console.log(this.userService.getUsers());
   }
 
-  first_name: string = 'Sasha';
-  last_name: string = 'Kostina';
-  birthdate: string = '1988-02-05';
-  city: string = 'Toulouse';
-  availability: string = "Immediatement";
+  user = {
+    first_name:  'Sasha',
+    last_name:  'Kostina',
+    birthdate:  '1988-02-05',
+    city:  'Toulouse',
+    availability:  "Immediatement",
+}
   
   
 
