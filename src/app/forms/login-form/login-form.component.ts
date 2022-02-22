@@ -26,16 +26,18 @@ export class LoginFormComponent implements OnInit {
   onSubmit() {
     console.log(this.profileForm.value);
     this.submitted = true;
-    this.loginThisUser(this.profileForm.value);
+    //this.loginThisUser(this.profileForm.value);
     this.resetUserForm(this.profileForm.value);
     //faire redirect sur la page profile
     this.router.navigate(['/profile']);
   }
+  /*
   loginThisUser(user: any) {
     this.userService.loginUser(user).subscribe((response: any) => {
       console.log(response);
     })
   }
+  */
   //permet tout simplement de faire un reset de tous les champs.
   resetUserForm(user: any) {
     this.profileForm.reset();

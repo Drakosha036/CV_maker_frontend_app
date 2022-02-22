@@ -1,14 +1,45 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs';
+import { Observable, Subject } from 'rxjs';
 import { Users } from '../model/users';
 import { WebRequestService } from './web-request.service';
-
+//connexion avec le backend 
+const baseUrl = 'http://localhost:8000';
 @Injectable({
   providedIn: 'root'
 })
 export class UsersService {
+  constructor(private http: HttpClient) {}
 
+  getAllUsers(): Observable<Users[]> {
+    return this.http.get<Users[]>(baseUrl);
+  }
+
+  getUser(id: any): Observable<any> {
+    return this.http.get(`${baseUrl}/${id}`);
+  }
+
+  createUser(data: any): Observable<any> {
+    return this.http.post(baseUrl, data);
+  }
+
+  updateUser(id: any, data: any): Observable<any> {
+    return this.http.put(`${baseUrl}/${id}`, data);
+  }
+
+  deleteUser(id: any): Observable<any> {
+    return this.http.delete(`${baseUrl}/${id}`);
+  }
+
+  deleteAllUsers(): Observable<any> {
+    return this.http.delete(baseUrl);
+  }
+
+  findByUsername(username: any): Observable<Users[]> {
+    return this.http.get<Users[]>(`${baseUrl}?username=${username}`);
+  }
+
+}
   //user: Users;
   //userSubject = new Subject<Users>();
 /*
@@ -24,18 +55,19 @@ export class UsersService {
     return this.http.post(this.rootURL + '/user', {user});
   }
   */
-
+/*
   constructor(private webReqService: WebRequestService) {
   }
   getUsers() {
     return this.webReqService.get('user');
   }
+  */
 /*
   getUserById() : Users {
     return this.webReqService.get()
   }
   */
-
+/*
   createUser(user: any) {
     //we want to send a web request to create a User
     console.log('no errors');
@@ -48,4 +80,9 @@ export class UsersService {
     return this.webReqService.post('user/login', user);
   }
 
-}
+  logoutUser() {
+    console.log("Vous etes deconnectes! ");
+    return this.webReqService.delete('user/logout');
+  }
+*/
+

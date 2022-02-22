@@ -5,13 +5,13 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class WebRequestService {
-
+  /*
   //readonly property
   readonly ROOT_URL;
 
   constructor(private http: HttpClient) { 
     //initialiser la property
-    this.ROOT_URL = 'http://localhost:3000';
+    this.ROOT_URL = 'http://localhost:8000';
   }
 
   get(uri: string) {
@@ -37,5 +37,5 @@ export class WebRequestService {
   delete(uri: string) {
     return this.http.delete(`${this.ROOT_URL}/${uri}`);
   }
-
+*/
 }
