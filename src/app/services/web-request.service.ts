@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class WebRequestService {
-  /*
+  
   //readonly property
   readonly ROOT_URL;
 
@@ -37,5 +37,5 @@ export class WebRequestService {
   delete(uri: string) {
     return this.http.delete(`${this.ROOT_URL}/${uri}`);
   }
-*/
+
 }

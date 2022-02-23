@@ -32,7 +32,7 @@ export class SignupFormComponent implements OnInit {
   onSubmit() {
     console.log(this.profileForm.value);
     this.submitted = true;
-    this.createNewUser(this.profileForm.value);
+    //this.createNewUser(this.profileForm.value);
     
     this.resetUserForm(this.profileForm.value);
     //faire redirect sur la page profile
@@ -42,12 +42,13 @@ export class SignupFormComponent implements OnInit {
   resetUserForm(user: any) {
     this.profileForm.reset();
   }
-
+/*
   createNewUser(user: any) {
     console.log('coucou2');
     this.userService.createUser(user).subscribe((response: any) => {
-      console.log(response);
+    console.log(response);
     });
     
   }
+  */
 }
