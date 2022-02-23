@@ -1,6 +1,8 @@
 <mat-drawer-container class="matcontainer">
   <mat-drawer mode="side" opened>
     <div class="background">
+
+    <div class="info-profil">
       <mat-card class="matcard">
         <mat-card-header>
           <div mat-card-avatar class="header-image"></div>
@@ -21,7 +23,7 @@
         </div>
 
         <mat-card-actions>
-          <button mat-button>Changer le Photo</button>
+          <div class="button-class"><button class="changer-photo-profil" mat-button>Changer le Photo</button></div>
         </mat-card-actions>
         <mat-card-content>
           <div class="field">Date de naissance: {{ user.birthdate }}</div>
@@ -31,12 +33,17 @@
         </mat-card-content>
       </mat-card>
     </div>
+
+    </div>
   </mat-drawer>
 
   <mat-drawer-content>
+    
     <mat-card class="exemple-card">
       <div class="page-display">
         <div class="background">
+
+          <div class="cv-apercu">
           <h2>Mon Profil</h2>
           <div>
             <h3>Aprecu de votre CV</h3>
@@ -50,30 +57,33 @@
               <button mat-button>Partager</button>
             </mat-card-actions>
           </div>
+        </div>
 
+        <div class="liste-competences">
           <div>
             <h3>Vos savoirs-faire:</h3>
             <mat-card-actions>
-              <button mat-button>Modifier</button>
+              <div class="button-class"><button mat-button>Modifier</button></div>
             </mat-card-actions>
           </div>
           <div>
             <h3>Vos savoirs-etre:</h3>
             <mat-card-actions>
-              <button mat-button>Modifier</button>
+              <div class="button-class"><button mat-button>Modifier</button></div>
             </mat-card-actions>
           </div>
           <div>
             <h3>Liste de vos CV en PDF:</h3>
             <mat-card-content>
-              <div>cv1.pdf</div>
-              <div>cv2.pdf</div>
-              <div>cv3.pdf</div>
+              <div class="bref-resume">
+                <div>cv1.pdf</div>
+                <div>cv2.pdf</div>
+                <div>cv3.pdf</div>
+            </div>
             </mat-card-content>
           </div>
+        </div>
 
-
-        <div> Liste de toutes les users: {{users}}</div>
 
 
         </div>

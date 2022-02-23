@@ -1,5 +1,5 @@
 .matcard {
-    max-width: 400px;
+    max-width: 100%;
   }
   
   .header-image {
@@ -26,5 +26,40 @@
   }
 
   .cv-image {
-      width: 50%;
+      width: 200px;
+  }
+
+  .background {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      margin-top: 40px;
+      margin-left: 40px;
+      margin-right: 20px;
+  }
+
+  .liste-competences {
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      margin-left: 20px;
+  }
+
+  .cv-apercu {
+    max-width: fit-content;
+  }
+
+  .info-profil {
+      max-width: fit-content;
+  }
+
+  .changer-photo-profil {
+      font-size: small;
+  }
+
+  .button-class {
+      display: flex;
+      justify-content: flex-end;
   }
