@@ -10,14 +10,19 @@ import { WebRequestService } from './web-request.service';
 export class UsersService {
   //connexion avec le backend 
   baseUrl = 'http://localhost:8000';  
-  httpHeaders = new HttpHeaders({'Content-type': 'application/json'});
+  httpHeaders = new HttpHeaders({'Content-type': 'application/json', 
+  "Authorizations": "Token 60bd20d2a4b0259c64f668e9b934ff100f8413b2", 
+  'Access-Control-Allow-Origin': '*' });
 
   //import le httpClient
   constructor(private http: HttpClient) {}
 
   getAllUsers(): Observable<any> {
     console.log(this.baseUrl);
-    return this.http.get(this.baseUrl + '/user/', 
+    const result = this.http.get(this.baseUrl + '/user/helloworld', 
+    {headers: this.httpHeaders});
+    console.log(result);
+    return this.http.get(this.baseUrl + '/user/helloworld', 
     {headers: this.httpHeaders});
   }
 
