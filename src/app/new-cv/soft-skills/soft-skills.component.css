@@ -1,0 +1,16 @@
+.test {
+    width: 100px;
+    color: yellowgreen;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.background {
+    width: fit-content;
+}
+
+.test3 {
+    display: flex;
+    flex-direction: row;
+}

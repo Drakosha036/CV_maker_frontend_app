@@ -43,6 +43,7 @@ import { LoginFormComponent } from './forms/login-form/login-form.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
+import { SideBarInfoComponent } from './side-bar-info/side-bar-info.component';
 
 @NgModule({
   declarations: [
@@ -80,7 +81,8 @@ import { MatCardModule } from '@angular/material/card';
     ChangeSkillsComponent,
     HeaderComponent,
     SignupFormComponent,
-    LoginFormComponent
+    LoginFormComponent,
+    SideBarInfoComponent
   ],
   imports: [
     BrowserModule,

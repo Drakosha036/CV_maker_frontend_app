@@ -1,0 +1,49 @@
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.background {
+    width: fit-content;
+
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.bref-resume {
+    background-color: white;
+    height:max-content;
+}
+
+.changer-photo-profil {
+    font-size: small;
+}
+
+.button-class {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.photo {
+    max-width: 100%;
+    size: 70%;
+    margin: 0%;
+    margin-top: 8%;
+    align-items: center;
+}
+
+.bref-resume {
+    background-color: white;
+    height:max-content;
+}
+
+.field {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

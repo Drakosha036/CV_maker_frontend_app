@@ -1,0 +1,21 @@
+<div class="side-bar">
+    <div class="background">
+      <div>
+        <h2>{{ user.first_name }} {{ user.last_name }}</h2>
+      </div>
+      <div class="photo">
+        <img
+          mat-card-image
+          src="/assets/Photo_profil.jpg"
+          alt="Image du profil"
+        />
+      </div>
+      <div class="button-class">
+        <button class="changer-photo-profil" mat-button>Changer le Photo</button>
+      </div>
+      <div class="field">Date de naissance: {{ user.birthdate }}</div>
+      <div class="field">Ville: {{ user.city }}</div>
+      <div class="field">Disponibilite: {{ user.availability }}</div>
+      <div class="bref-resume">Bref resume...</div>
+    </div>
+  </div>
