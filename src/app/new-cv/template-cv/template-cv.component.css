@@ -23,27 +23,6 @@ img {
     margin-left: 3px;
 }
 
-.round-button {
-    border-radius: 45%;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    padding: 3px;
-    font-size: medium;
-}
-
-.arianne {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-}
-
-p {
-    margin-top: 6px;
-    margin-bottom: 0%;
-}
-
 .templates {
   display: flex;
   flex-wrap: wrap;
