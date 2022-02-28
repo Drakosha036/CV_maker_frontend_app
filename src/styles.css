@@ -27,3 +27,14 @@ button {
     height: 100%;
     margin: 0;
 }
+
+.div-global {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    justify-content: space-evenly;
+}
+
+.page-name {
+    margin-top: 60px;
+}

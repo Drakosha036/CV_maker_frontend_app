@@ -1,21 +1,3 @@
-.div-global {
-    display: flex;
-    flex-direction: row;
-}
-
-.page-name {
-    margin-top: 60px;
-}
-
-.matcard {
-    max-width: 100%;
-  }
-  
-  .header-image {
-    background-image: url('/assets/Photo_profil.jpg');
-    background-size: cover;
-  }
-
   .bref-resume {
       background-color: white;
       height:max-content;
@@ -38,18 +20,29 @@
       width: 95%;
       margin-top: 35px;
   }
+  
+  img {
+      max-width: 600px;
+  }
+
+  .cvbuttons {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+  }
 
   .background {
       display: flex;
       flex-direction: row;
       justify-content:space-evenly;
+      max-width: 100%;
       margin-top: 40px;
       margin-left: 20px;
       margin-right: 20px;
   }
 
   .liste-competences {
-      width: 95%;
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
@@ -71,6 +64,7 @@
 
   .button-class {
       display: flex;
+      flex-direction: row;
       justify-content: flex-end;
   }
 
