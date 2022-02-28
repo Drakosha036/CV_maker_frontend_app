@@ -1,7 +1,4 @@
-  .bref-resume {
-      background-color: white;
-      height:max-content;
-  }
+
   
   .field {
       padding-top: 5px;
@@ -20,7 +17,7 @@
       width: 95%;
       margin-top: 35px;
   }
-  
+
   img {
       max-width: 600px;
   }

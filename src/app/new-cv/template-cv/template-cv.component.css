@@ -1,0 +1,61 @@
+.background {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    max-width: 100%;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.cv-apercu {
+    margin-left: 20px;
+    max-width: fit-content;
+}
+
+.choisir-template {
+    max-width: auto;
+}
+
+img {
+    max-width: 300px;
+    margin-top: 3px;
+    margin-left: 3px;
+}
+
+.round-button {
+    border-radius: 45%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 3px;
+    font-size: medium;
+}
+
+.arianne {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+p {
+    margin-top: 6px;
+    margin-bottom: 0%;
+}
+
+.templates {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin-top: 10px;
+}
+
+.bref-resume {
+    height: 500px;
+    overflow: auto;
+}
+
+.button-class {
+    margin-top: 20px;
+}

@@ -38,3 +38,18 @@ button {
 .page-name {
     margin-top: 60px;
 }
+
+.bref-resume {
+    background-color: white;
+    height:max-content;
+}
+
+button:disabled {
+    background-color: lightslategray;
+}
+
+.button-class {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
