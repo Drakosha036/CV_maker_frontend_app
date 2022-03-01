@@ -70,12 +70,6 @@
       justify-content: center;
   }
 
-  .tire {
-    border: #44547C;
-    width: 100px;
-    height: 3px;
-    border-radius: 2px;
-  }
 
   .tire2 {
       display: flex;

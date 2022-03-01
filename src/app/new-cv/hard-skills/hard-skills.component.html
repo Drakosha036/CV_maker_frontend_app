@@ -2,6 +2,10 @@
   <div class="sidebar"><app-side-bar-info></app-side-bar-info></div>
   <div class="page-content">
     <div class="page-name">
+        <div class="page-name2"><h2>Mon Profil</h2></div>
+        <div class="tire2">
+            <img class="tire" src="/assets/tire.png" alt="tire" />
+        </div>
       <div class="arianne">
         <button class="round-button" routerLink="/template-cv">1</button>
         <button class="round-button" routerLink="/general-info">2</button>
@@ -17,10 +21,50 @@
 
 
     <div class="background">
-        <div>
-            <div class="hardskills"></div>
+        <div class="content">
+            <div class="hardskills">
+                <h3>Liste de vos savoirs-faire:</h3>
+                <div>skills ici</div>
+                
+                <div>
+                    <!--
+                    <form (ngSubmit)="onSubmit()">
+                        <input class="input-field" type="text" placeholder="Commencez a ecrire ici ..."><button type="submit" class="ajouter">Ajouter +</button>
+                    </form>
+-->
+                    <form (ngSubmit) = "hardskillAdd()">
+                        <input type="text" class="form-control" placeholder="Ajoutez votre savoirs-faire..." ngModel="hardskillInput"/>
+                        <input type="submit" value="Add" class="btn btn-success" />
+                    </form>
+                    
+                    <div class="form-control">
+                        <input type="checkbox"> tata
+                        <input type="checkbox"> titi
+
+                        <ul *ngFor="let x of hardskillList">
+                            <li>
+                                <input type="checkbox"> <span>{{x.hardskillText}}</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-danger">Delete</button>
+
+
+                    <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+                        <input name="first" ngModel  #first="ngModel">
+                        <input name="last" ngModel>
+                        <button>Submit</button>
+                      </form>
+                  
+                      <p>First name value: {{ first.value }}</p>
+                      <p>First name valid: {{ first.valid }}</p>
+                      <p>Form value: {{ f.value | json }}</p>
+                      <p>Form valid: {{ f.valid }}</p>
+
+                </div>
+            </div>
             <div class="img-maia">
-                <img src="/assets/Maia_image_round.jpg" alt="Image de Maia">
+                <img class="img" src="/assets/Maia_image_round.jpg" alt="Image de Maia">
             </div>
         </div>
         <div>

@@ -95,3 +95,10 @@ button:disabled {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+.tire {
+    border: #44547C;
+    width: 100px;
+    height: 3px;
+    border-radius: 2px;
+  }
