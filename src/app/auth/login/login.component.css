@@ -1,0 +1,18 @@
+.background {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: fit-content;
+    padding-bottom: 0%;
+}
+
+.formular {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 400px;
+    margin-left:35%;
+    
+}

@@ -1,0 +1,21 @@
+.background {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: fit-content;
+    padding-bottom: 0%;
+}
+
+img {
+    border-radius: 50%;
+    width: 50%;
+}
+
+.image-maia {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    padding-left: 10%;
+}

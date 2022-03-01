@@ -1,16 +1,18 @@
 <div class="background">
-    <form [formGroup]="profileForm" (submit)="onSubmit()">
-        <div>
-            <label>Email</label>
-            <input type="email" required formControlName="email">
-        </div>
-        <div>
-            <label>Mot de passe</label>
-            <input type="password" required formControlName="password" >
-        </div>
-            <br>
-        <div>
-            <button type="submit" [disabled]="!profileForm.valid">Se connecter</button>
-        </div>
-    </form>
+    <div class="form">
+        <form [formGroup]="profileForm" (submit)="onSubmit()">
+            <div class="form-field">
+                <div><label>Email</label></div>
+                <div><input type="email" required formControlName="email"></div>
+            </div>
+            <div class="form-field">
+                <div><label>Mot de passe</label></div>
+                <div><input type="password" required formControlName="password" ></div>
+            </div>
+                <br>
+            <div class="nav-buttons">
+                <button type="submit" [disabled]="!profileForm.valid">Se connecter</button>
+            </div>
+        </form>
+    </div>
 </div>

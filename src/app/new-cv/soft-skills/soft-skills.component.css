@@ -1,0 +1,10 @@
+.background {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: fit-content;
+    padding-bottom: 0%;
+}
+

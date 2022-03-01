@@ -1,3 +1,25 @@
 button:disabled {
     background-color: lightslategray;
 }
+
+.background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: fit-content;
+    padding-bottom: 40px;
+}
+
+.form {
+    max-width: 400px;
+}
+
+.nav-buttons {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content:center;
+}
