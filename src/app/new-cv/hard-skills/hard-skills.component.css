@@ -12,6 +12,7 @@
     border-radius: 50%;
     width: 70%;
     transform: rotateY(180deg);
+    margin-left: 100px;
     
 }
 
@@ -22,18 +23,7 @@
 }
 
 .image-maia {
-    
 
-}
-.tire2 {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 40px;
-}
-
-.page-name2 {
-    display: flex;
-    justify-content: center;
 }
 
 .input-field {
