@@ -21,10 +21,6 @@ h2 {
     height:max-content;
 }
 
-.changer-photo-profil {
-    font-size: small;
-}
-
 .button-class {
     display: flex;
     justify-content: flex-end;

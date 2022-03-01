@@ -63,6 +63,13 @@ button:disabled {
     font-size: medium;
 }
 
+.nav-buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .arianne {
     display: flex;
     flex-direction: row;
@@ -70,6 +77,10 @@ button:disabled {
     text-align: center;
 }
 .name-arianne {
-    margin-top: 6px;
+    margin-top: 5px;
     margin-bottom: 0%;
+}
+
+.changer-photo-profil {
+    font-size: small;
 }

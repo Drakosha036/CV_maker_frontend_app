@@ -5,12 +5,130 @@
       <div class="arianne">
         <button class="round-button" routerLink="/template-cv">1</button>
         <button class="round-button" disabled routerLink="/general-info">2</button>
-        <p class="name-arianne">Information generale</p>
+        <h3 class="name-arianne">Information generale</h3>
         <button class="round-button" routerLink="/hard-skills">3</button>
         <button class="round-button" routerLink="/soft-skills">4</button>
         <button class="round-button" routerLink="/experience-pro">5</button>
         <button class="round-button" routerLink="/availability">6</button>
       </div>
     </div>
+
+
+    <div class="background">
+        <div class="info-form">
+            <div class="form">
+                <div><h3>Remplissez vos donnees:</h3></div>
+                <form [formGroup]="profileForm"  (ngSubmit)="onSubmit()">
+                    <div class="form-field">
+                        <div><label>Prenom</label></div>
+                        <div><input type="text" formControlName="first_name" ></div>
+                    </div>
+                    <div class="form-field">
+                        <div><label for="Nom">Nom</label></div>
+                        <div><input type="text" formControlName="last_name" ></div>
+                    </div>
+                    <div class="form-field">
+                        <div><label>Date de naissance</label></div>
+                        <div><input type="date" value="28/02/2022" formControlName="birthdate" ></div>
+                    </div>
+                    <div class="form-field">
+                        <div><label>Ville</label></div>
+                        <div><input type="text" formControlName="city" ></div>
+                    </div>
+                    <div class="form-field">
+                        <div><label>Telephone</label></div>
+                        <div><input type="text" formControlName="phone" ></div>
+                    </div>
+                    <div class="form-field">
+                        <div><label>Email</label></div>
+                        <div><input type="email" formControlName="email" ></div>
+                    </div>
+                </form>
+
+                <div><h3>Etes-vous disponible pour:</h3></div>
+                <div class="check">
+                    <div><input type="checkbox"><label>deplacement</label></div>
+                    <div><input type="checkbox"><label>demenagement</label></div>
+                </div>
+                <div>
+                    <h3>Si oui, indiquez le radius en km:</h3> 
+                        <select >
+                            <option>-5km</option>
+                            <option>5km</option>
+                            <option>10km</option>
+                            <option>20km</option>
+                            <option>30km</option>
+                            <option>40km</option>
+                            <option>50km</option>
+                            <option>+50km</option>
+                        </select>
+                </div>
+                <div>
+                    <h3>Indiquez, si vous voulez travailler ailleurs:</h3>
+                    
+                </div>
+                <div class="check">
+                    <div><input type="checkbox"><label>France</label></div>
+                    <div><input type="checkbox"><label>Europe</label></div>
+                    <div><input type="checkbox"><label>Monde</label></div>
+                </div>
+            </div>
+
+            <div class="photo-profil">
+                <div><img src="/assets/Photo_profil.jpg" alt="Image du profil"/></div>
+                <div class="button-class">
+                    <button class="changer-photo-profil" >Changer le Photo</button>
+                </div>
+            </div>
+        </div>
+        <div class="nav-buttons">
+            <button routerLink="/template-cv">Precedent</button>
+            <button type="submit" routerLink="/hard-skills">Suivant</button>
+        </div>
+    </div>
   </div>
 </div>
+
+
+<!-- TEST
+<div class="background">
+        <div class="info-form">
+            <div class="form">
+
+                <form [formGroup]="profileForm"  (ngSubmit)="onSubmit()">
+                    <div>
+                        <label>Prenom</label>
+                        <input type="text" formControlName="first_name" >
+                    </div>
+                    <div>
+                        <label for="Nom">Nom</label>
+                        <input type="text" formControlName="last_name" >
+                    </div>
+                    <div>
+                        <label>Date de naissance</label>
+                        <input type="text" formControlName="birthdate" >
+                    </div>
+                    <div>
+                        <label>Date de naissance</label>
+                        <input type="text" formControlName="last_name" >
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input type="email" formControlName="email" >
+                    </div>
+                </form>
+
+            </div>
+            <div class="photo-profil">
+                <div><img src="/assets/Photo_profil.jpg" alt="Image du profil"/></div>
+                <div class="button-class">
+                    <button class="changer-photo-profil" >Changer le Photo</button>
+                </div>
+            </div>
+        </div>
+        <div class="nav-buttons">
+            <button routerLink="/template-cv">Precedent</button>
+            <button type="submit" routerLink="/hard-skills">Suivant</button>
+        </div>
+    </div>
+-->

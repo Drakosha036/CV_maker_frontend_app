@@ -1,0 +1,44 @@
+.background {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: fit-content;
+    padding-bottom: 0%;
+}
+
+.info-form {
+    display: flex;
+    flex-direction: row;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field, .check {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.photo-profil {
+    margin-left: 300px;
+}
+
+select {
+    height: 20px;
+    display: flex;
+    justify-self: center;
+}
+
+.nav-buttons {
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+img {
+    width: 200px;
+}
