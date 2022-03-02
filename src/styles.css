@@ -42,6 +42,7 @@ button {
 .bref-resume {
     background-color: white;
     height:max-content;
+    padding: 3%;
 }
 
 button:disabled {

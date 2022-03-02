@@ -18,7 +18,92 @@
         </div>
 
         <div class="background">
-            jfwelfl
+            <div class="nav-buttons">
+                <button >Faire un test de compétences</button>
+                <button >Ajouter une compétence + </button>
+            </div>
+
+            <div class="competences">
+                <div class="list-competences">
+                    <div><h3>Vos compétences:</h3></div>
+                    <div class="popup" (click)="popupFunction1()">
+                        <p>Capacite d’adaptation</p>
+                        <span class="popuptext" id="myPopup1">{{descriptionText.capaciteDAdaptation}}</span>
+                    </div>
+                    <div class="popup" (click)="popupFunction2()">
+                        <p> Gestion du stress</p>
+                        <span class="popuptext" id="myPopup2">{{descriptionText.gestionDuStress}}</span>
+                    </div>
+                    <div class="popup" (click)="popupFunction3()">
+                        <p>Travail en equipe</p>
+                        <span class="popuptext" id="myPopup3">{{descriptionText.travailEnEquipe}}</span>
+                    </div>
+                    <div class="popup" (click)="popupFunction4()">
+                        <p>Capacite a federer</p>
+                        <span class="popuptext" id="myPopup4">{{descriptionText.capaciteAFederer}}</span>
+                    </div>
+                    <div class="popup" (click)="popupFunction5()">
+                        <p>Sens de la communication</p>
+                        <span class="popuptext" id="myPopup5">{{descriptionText.sensDeLaCommunication}}</span>
+                    </div>
+                    <div class="popup" (click)="popupFunction6()">
+                        <p>Rigueur</p>
+                        <span class="popuptext" id="myPopup6">{{descriptionText.rigueur}}</span>
+                    </div>
+                    <div class="popup" (click)="popupFunction7()">
+                        <p>Autonomie</p>
+                        <span class="popuptext" id="myPopup7">{{descriptionText.autonomie}}</span>
+                    </div>
+                    <div class="popup" (click)="popupFunction8()">
+                        <div><p>Capacite de decision</p></div>
+                        <div><img src="/assets/img/5stars.png"></div>
+                        <span class="popuptext" id="myPopup8">{{descriptionText.capaciteDeDecision}}</span>
+                    </div>
+                    <div class="popup" (click)="popupFunction9()">
+                        <p>Sens de l’organisation</p>
+                        <span class="popuptext" id="myPopup9">{{descriptionText.sensDeLOrganisation}}</span>
+                    </div>
+                    <div class="popup" (click)="popupFunction10()">
+                        <p>Force  de proposition</p>
+                        <span class="popuptext" id="myPopup10">{{descriptionText.forceDeProposition}}</span>
+                    </div>
+                    <div class="popup" (click)="popupFunction11()">
+                        <p>Curiosite</p>
+                        <span class="popuptext" id="myPopup11">{{descriptionText.curiosite}}</span>
+                    </div>
+                    <div class="popup" (click)="popupFunction12()">
+                        <p>Perseverence</p>
+                        <span class="popuptext" id="myPopup12">{{descriptionText.perseverance}}</span>
+                    </div>
+                    <div class="popup" (click)="popupFunction13()">
+                        <p>Prise de recul</p>
+                        <span class="popuptext" id="myPopup13">{{descriptionText.priseDeRecul}}</span>
+                    </div>
+                    <div class="popup" (click)="popupFunction14()">
+                        <p>Reactivite</p>
+                        <span class="popuptext" id="myPopup14">{{descriptionText.reactivite}}</span>
+                    </div>
+                    <div class="popup" (click)="popupFunction15()">
+                        <p>Compétence sup 1</p>
+                        <span class="popuptext" id="myPopup15">{{descriptionText.competenceSup1}}</span>
+                    </div>
+                    <div class="popup" (click)="popupFunction16()">
+                        <p>Compétence sup 2</p>
+                        <span class="popuptext" id="myPopup16">{{descriptionText.competenceSup2}}</span>
+                    </div>
+                </div>
+                <div class="description">
+                    <div class="bref-resume"><p>Cliquez sur le nom de compétence pour voir sa description. Cliquez deuxieme fois pour la cacher.</p></div>
+                    <div class="img-maia">
+                        <img class="img" src="/assets/Maia_image_round.jpg" alt="Image de Maia">
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-buttons">
+                <button routerLink="/hard-skills">Precedent</button>
+                <button routerLink="/experience-pro">Suivant</button>
+            </div>
         </div>
     </div>
 </div>
